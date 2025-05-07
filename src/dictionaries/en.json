@@ -1,0 +1,59 @@
+{
+    "homepage": {
+        "title": "Welcome to Brad Utils",
+        "description": "A collection of useful tools to simplify your daily work.",
+        "startNow": "Start Now",
+        "learnMore": "Learn More",
+        "header": {
+            "solutions": "Solutions",
+            "aboutMe": "About Me"
+        }
+    },
+    "utils": {
+        "title": "Our Utilities",
+        "categories": {
+            "pdf": {
+                "title": "PDF Utilities",
+                "description": "Tools to manipulate, convert, and edit PDF files"
+            },
+            "image": {
+                "title": "Image Utilities",
+                "description": "Optimize, resize, and convert images easily"
+            },
+            "dev": {
+                "title": "Development Tools",
+                "description": "Utilities for developers such as code formatting and validation"
+            },
+            "data": {
+                "title": "Data Conversion",
+                "description": "Convert between different data formats like CSV, JSON, XML"
+            },
+            "calculators": {
+                "title": "Calculators",
+                "description": "Specialized calculators for different needs"
+            },
+            "misc": {
+                "title": "Other Utilities",
+                "description": "Additional tools for various tasks"
+            }
+        }
+    },
+    "cta": {
+        "customUtility": "Need a custom utility?",
+        "customUtilityDescription": "If you need a specific tool that you don't find here, contact us and we can develop it for you.",
+        "contact": "Contact"
+    },
+    "footer": {
+        "rights": "All rights reserved.",
+        "terms": "Terms",
+        "privacy": "Privacy"
+    },
+    "localeSwitcher": {
+        "label": "Change language",
+        "locale": {
+            "en": "English",
+            "es": "Spanish"
+        }
+    }
+}
+  

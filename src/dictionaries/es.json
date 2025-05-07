@@ -1,0 +1,59 @@
+{
+    "homepage": {
+        "title": "Bienvenido a Brad Utils",
+        "description": "Una colección de herramientas útiles para simplificar tu trabajo diario.",
+        "startNow": "Comienza Ahora",
+        "learnMore": "Aprende Más",
+        "header": {
+            "solutions": "Soluciones",
+            "aboutMe": "Acerca de Mi"
+        }
+    },
+    "utils": {
+        "title": "Nuestras Utilidades",
+        "categories": {
+            "pdf": {
+                "title": "Utilidades PDF",
+                "description": "Herramientas para manipular, convertir y editar archivos PDF"
+            },
+            "image": {
+                "title": "Utilidades de Imagen",
+                "description": "Optimiza, redimensiona y convierte imágenes fácilmente"
+            },
+            "dev": {
+                "title": "Herramientas de Desarrollo",
+                "description": "Utilidades para desarrolladores como formateo de código y validación"
+            },
+            "data": {
+                "title": "Conversión de Datos",
+                "description": "Convierte entre diferentes formatos de datos como CSV, JSON, XML"
+            },
+            "calculators": {
+                "title": "Calculadoras",
+                "description": "Calculadoras especializadas para diferentes necesidades"
+            },
+            "misc": {
+                "title": "Otras Utilidades",
+                "description": "Herramientas adicionales para diversas tareas"
+            }
+        }
+    },
+    "cta": {
+        "customUtility": "¿Necesitas una utilidad personalizada?",
+        "customUtilityDescription": "Si necesitas una herramienta específica que no encuentras aquí, contáctanos y podemos desarrollarla para ti.",
+        "contact": "Contactar"
+    },
+    "footer": {
+        "rights": "Todos los derechos reservados.",
+        "terms": "Términos",
+        "privacy": "Privacidad"
+    },
+    "localeSwitcher": {
+        "label": "Cambiar idioma",
+        "locale": {
+            "en": "Inglés",
+            "es": "Español"
+        }
+    }
+}
+  
