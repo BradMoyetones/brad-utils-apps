@@ -1,12 +1,12 @@
 import Link from "next/link"
-import { Github, Twitter, Linkedin } from "lucide-react"
+import { Github, Twitter, Linkedin, Instagram } from "lucide-react"
 
 export default function Footer() {
     return (
         <footer className="border-t">
             <div className="container flex flex-col gap-8 py-8 md:flex-row md:py-12 mx-auto">
                 <div className="flex-1 space-y-4">
-                    <h2 className="font-bold">Amane Soft</h2>
+                    <h2 className="font-bold">Brad Tools</h2>
                     <p className="text-sm text-muted-foreground">Pioneering software solutions for the digital age.</p>
                 </div>
                 <div className="grid flex-1 grid-cols-2 gap-12 sm:grid-cols-3">
@@ -29,7 +29,7 @@ export default function Footer() {
                         <h3 className="text-sm font-medium">Company</h3>
                         <ul className="space-y-3 text-sm">
                             <li>
-                                <Link href="/about" className="text-muted-foreground transition-colors hover:text-primary">
+                                <Link href="https://portfolio-brad.vercel.app" className="text-muted-foreground transition-colors hover:text-primary">
                                     About Me
                                 </Link>
                             </li>
@@ -39,21 +39,21 @@ export default function Footer() {
                         <h3 className="text-sm font-medium">Connect</h3>
                         <div className="flex space-x-4">
                             <Link
-                                href="https://github.com/amanesoft"
+                                href="https://github.com/BradMoyetones"
                                 className="text-muted-foreground transition-colors hover:text-primary"
                             >
                                 <Github className="h-5 w-5" />
                                 <span className="sr-only">GitHub</span>
                             </Link>
                             <Link
-                                href="https://twitter.com/amanesoft"
+                                href="https://www.instagram.com/its.bradn/"
                                 className="text-muted-foreground transition-colors hover:text-primary"
                             >
-                                <Twitter className="h-5 w-5" />
-                                <span className="sr-only">Twitter</span>
+                                <Instagram className="h-5 w-5" />
+                                <span className="sr-only">Instagram</span>
                             </Link>
                             <Link
-                                href="https://linkedin.com/company/amanesoft"
+                                href="https://co.linkedin.com/in/brad-salom%C3%B3n-moyetones-navas-726b9a1a8"
                                 className="text-muted-foreground transition-colors hover:text-primary"
                             >
                                 <Linkedin className="h-5 w-5" />
@@ -65,7 +65,7 @@ export default function Footer() {
             </div>
             <div className="container border-t py-6 mx-auto">
                 <p className="text-center text-sm text-muted-foreground">
-                    © {new Date().getFullYear()} Amane Soft, Inc. All rights reserved.
+                    © {new Date().getFullYear()} Brad, Inc. All rights reserved.
                 </p>
             </div>
         </footer>

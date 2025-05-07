@@ -1,4 +1,5 @@
 import { Code, FileJson, FileSpreadsheet, FileText, ImageIcon, PenToolIcon as Tool } from "lucide-react"
+import Link from "next/link"
 
 const features = [
   {
@@ -55,20 +56,22 @@ export default function Features() {
   return (
     <section className="container space-y-16 py-24 md:py-32 mx-auto">
       <div className="mx-auto max-w-[58rem] text-center">
-        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">Cutting-Edge Solutions</h2>
+        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">Nustras utilidades</h2>
         <p className="mt-4 text-muted-foreground sm:text-lg">
-          Discover how Amane Soft can transform your business with our innovative technologies.
+          Descrube nuestras herramientas que ayudan a tus tareas diarias.
         </p>
       </div>
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
         {features.map((feature) => (
-          <div key={feature.title} className="relative overflow-hidden rounded-lg border bg-background p-8">
-            <div className="flex items-center gap-4">
-              {feature.icon}
-              <h3 className="font-bold">{feature.title}</h3>
+          <Link key={feature.title} href={feature.href}>
+            <div className="relative overflow-hidden rounded-lg bg-background p-8 hover:border-indigo-600 border-2">
+              <div className="flex items-center gap-4">
+                {feature.icon}
+                <h3 className="font-bold">{feature.title}</h3>
+              </div>
+              <p className="mt-2 text-muted-foreground line-clamp-2">{feature.description}</p>
             </div>
-            <p className="mt-2 text-muted-foreground">{feature.description}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
