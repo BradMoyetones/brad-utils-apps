@@ -3,7 +3,7 @@ import { Github, Linkedin, Instagram } from "lucide-react"
 
 export default function Footer() {
     return (
-        <footer className="border-t">
+        <footer className="border-t px-4">
             <div className="container flex flex-col gap-8 py-8 md:flex-row md:py-12 mx-auto">
                 <div className="flex-1 space-y-4">
                     <h2 className="font-bold">Brad Tools</h2>
