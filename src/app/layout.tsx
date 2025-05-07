@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brad Utils",
+  title: "Brad Tools",
   description: "Plataforma integral de herramientas para manipulación de PDFs, procesamiento de imágenes y conversión de datos. Simplifica tus tareas digitales con Brad Utils.",
   icons: {
     icon: '/favicon.svg'
