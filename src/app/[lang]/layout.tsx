@@ -6,8 +6,8 @@ export async function generateStaticParams() {
   return [{ lang: 'es' }, { lang: 'en' }]
 }
 
-export async function generateMetadata({ params }: { params: { lang: string } }) {
-  const dict = await getDictionary(params.lang as Locale)
+export async function generateMetadata() {
+  const dict = await getDictionary("es")
 
   return {
     title: "Brad Utils - Herramientas y Utilidades Digitales",
@@ -18,14 +18,12 @@ export async function generateMetadata({ params }: { params: { lang: string } })
 
 export default async function LangLayout({
   children,
-  params
 }: Readonly<{
   children: React.ReactNode;
-  params: { lang: string };
 }>) {
-  const dict = await getDictionary(params.lang)
+  const dict = await getDictionary("es")
   return (
-    <I18nProvider dict={dict} lang={params.lang}>
+    <I18nProvider dict={dict} lang={"es"}>
       {children}
     </I18nProvider>
   );
