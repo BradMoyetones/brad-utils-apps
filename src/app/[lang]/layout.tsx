@@ -1,34 +1,32 @@
-import { Inter } from "next/font/google";
-import type { ReactNode } from "react";
-import { Locale } from "../../dictionaries";
-import I18nWrapper from "@/components/I18nWrapper";
+import { getDictionary, Locale } from "../../dictionaries";
+import { I18nProvider } from "@/contexts/i18n-context";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export function generateStaticParams() {
-  return [{ lang: 'es' }, { lang: 'en' }];
+// Definimos los idiomas soportados para la generación estática
+export async function generateStaticParams() {
+  return [{ lang: 'es' }, { lang: 'en' }]
 }
 
-export function generateMetadata() {
+export async function generateMetadata({ params }: { params: { lang: string } }) {
+  const dict = await getDictionary(params.lang as Locale)
+
   return {
     title: "Brad Utils - Herramientas y Utilidades Digitales",
     description:
       "Plataforma integral de herramientas para manipulación de PDFs, procesamiento de imágenes y conversión de datos.",
-  };
+  }
 }
 
-export default function RootLayout({
+export default async function LangLayout({
   children,
-  params,
-}: {
-  children: ReactNode;
-  params: { lang: Locale };
-}) {
+  params
+}: Readonly<{
+  children: React.ReactNode;
+  params: { lang: string };
+}>) {
+  const dict = await getDictionary(params.lang)
   return (
-    <div className={`${inter.className} antialiased`}>
-      <I18nWrapper lang={params.lang}>
-        {children}
-      </I18nWrapper>
-    </div>
+    <I18nProvider dict={dict} lang={params.lang}>
+      {children}
+    </I18nProvider>
   );
 }
